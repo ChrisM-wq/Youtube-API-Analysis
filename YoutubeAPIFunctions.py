@@ -1,3 +1,17 @@
+#import libraries
+from googleapiclient.discovery import build
+import pandas as pd
+import requests
+import time
+import seaborn as sns
+import matplotlib.pyplot as plt
+import matplotlib.ticker as tck
+from dateutil.parser import parse
+
+#NLP
+from wordcloud import WordCloud
+import nltk
+
 def get_channel_stats(youtube, channel_ids):
 
     """
